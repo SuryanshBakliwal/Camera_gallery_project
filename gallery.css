@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    align-items: center;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+.back:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.gallery-cont {
+    width: 100vw;
+    background-color: #121418;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media-cont {
+    height: 15rem;
+    width: 15rem;
+    border: 7px solid white;
+    margin: 2rem;
+}
+.media-cont:hover{
+    border: 7px solid rgb(143, 169, 199);
+}
+
+.media {
+    height: calc(100% - 2rem - 2rem);
+    /* background-color: rgb(167, 101, 228); */
+}
+.media>* {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.action-btn {
+    height: 2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.download {
+    background-color: black;
+    cursor: pointer;
+
+}
